@@ -53,13 +53,10 @@ function sumNumbers(array) {
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(array) {
-  let average = 0;
-  if (array.length === 0) {
+  let average = sumNumbers(array);
+  if (average === 0) {
     return average;
   } else {
-    array.forEach((element) => {
-      average += element;
-    });
     return average / array.length;
   }
 }
